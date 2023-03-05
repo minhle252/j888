@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./plugins/css/style.css">
+    <link rel="stylesheet" href="./plugins/css/all.min.css" />
 </head>
+
 <body>
     <div class="form_login">
-        <img  src="./plugins/images/form_login.png" alt="">
+        <img src="./plugins/images/form_login_end.png" alt="">
         <div class="group_btn">
             <a href="#" class="btn_top btn_top_left"></a>
             <a href="#" class="btn_top btn_top_right"></a>
         </div>
         <div class="form_login_field">
-            <input type="text" placeholder="Tài Khoản" class="username_field">
-            <input type="text" placeholder="Họ Tên" class="full_name_field">
-            <input type="text" placeholder="Mật Khẩu" class="pass_field">
-            <input type="text" placeholder="Số Điện Thoại" class="phone_field">
+            <div class="form_group group_username">
+                <input type="text" placeholder="Tài Khoản" id="username_field" class="username_field">
+                <a href="#"><i class="fa-regular fa-eye text_warning"></i></a>
+            </div>
+            <label class="text_validate" for="username_field">từ 2 - 15 kỹ tự bắt đầu bằng chữ cái, có thể
+                bằng chữ cái, số và gạch dưới</label>
+            <div class="form_group group_fullname">
+                <input type="text" placeholder="Họ Tên" id="full_name_field" class="full_name_field">
+                <a href="#"><i class="fa-regular fa-eye text_warning"></i></a>
+            </div>
+            <label class="text_validate" for="full_name_field">Cần giống tên tài khoản ngân hàng, viết hoa không
+                dấu, nếu không sẽ không rút được tiền</label>
+            <div class="form_group group_pass">
+                <input type="password" placeholder="Mật Khẩu" id="pass_field" class="pass_field">
+                <a href="#"><i class="fa-regular fa-eye text_warning"></i></a>
+            </div>
+            <label class="text_validate" for="pass_field">Hơn 6 ký tự bao gồm cũng chữ cáo và số</label>
+            <div class="form_group group_phone">
+                <input type="tel" placeholder="Số Điện Thoại" id="phone_field" class="phone_field">
+                <a href="#"><i class="fa-regular fa-eye text_warning"></i></a>
+            </div>
+            <label class="text_validate" for="phone_field">Vui lòng nhập đúng số điện thoại</label>
         </div>
-        <a href="#" class="btn_register"></a>
+        <a href="#" class="btn_register">
+        </a>
     </div>
     <div class="wrap_icon">
-        <img src="./plugins/images/wrap_icons.png" alt="">
+        <img src="./plugins/images/wrap_icons2.png" alt="">
+        <div class="wrap_icon_link">
+            <a class="link_icon_item" href="#"></a>
+            <a class="link_icon_item" href="#"></a>
+            <a class="link_icon_item" href="#"></a>
+            <a class="link_icon_item" href="#"></a>
+            <a class="link_icon_item" href="#"></a>
+        </div>
     </div>
 </body>
+
 </html>
